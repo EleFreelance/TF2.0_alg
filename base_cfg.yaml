@@ -1,0 +1,19 @@
+PROJECT_TYPE: classifer
+SUBSTACK: classify
+is_training: True
+
+create_data_type: create_minist_tfrecord
+parse_data_type: minist
+rebuild_cache: False
+
+input_reader_config:
+  batch_size: 32
+  buffer_size: 320
+  data_type: minist
+
+
+model_config:
+  model_type: Alex
+
+train_config:
+
